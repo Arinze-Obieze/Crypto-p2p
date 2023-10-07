@@ -1,24 +1,16 @@
-import React from 'react';
 import { CiFilter } from 'react-icons/ci';
 import { AiOutlineLike } from 'react-icons/ai';
 import { BiTime } from 'react-icons/bi';
 import { FaNairaSign } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
 import { dummyData } from '../data/p2p';
 
-const P2P = () => {
-    const displayedData = dummyData.slice(0, 2);
+const Market = () => {
 
     return (
         <div>
             <div>
                 <div className="mt-2 bg-white pb-4">
-                    <span className="flex mb-4 py-4 text-yellow-600 justify-between px-4">
-                        <h1>P2P</h1>
-                        <Link to="/market" className="cursor-pointer">
-                            see more...
-                        </Link>
-                    </span>
+
                     <span className="flex space-x-6 px-4">
                         <h2>Buy</h2>
                         <h2>Sell</h2>
@@ -47,7 +39,7 @@ const P2P = () => {
             </div>
 
             <div className="grid grid-cols-1 space-y-2">
-                {displayedData.map((item) => (
+                {dummyData.map((item) => (
                     <div key={item.id} className="bg-white px-4 mt-1 flex cursor-pointer py-2">
                         <div className="space-y-1">
                             <h1>{item.username}</h1>
@@ -87,4 +79,4 @@ const P2P = () => {
     );
 };
 
-export default P2P;
+export default Market;

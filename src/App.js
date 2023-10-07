@@ -7,6 +7,7 @@ import Wallet from './pages/Wallet';
 import Deposit from './pages/Deposit';
 import Convert from './pages/Convert';
 import Referral from './pages/Referral';
+import Market from './pages/market';
 function App() {
   return (
     <Routes>
@@ -17,6 +18,7 @@ function App() {
       <Route path='/deposit' element={<Deposit />} />
       <Route path='/convert' element={<Convert />} />
       <Route path='/convert' element={<Referral />} />
+      <Route path='/market' element={<Market/>} />
     </Routes>
   );
 }
