@@ -10,7 +10,7 @@ const P2P = () => {
             <div>
 
 
-                <div className="mt-4 bg-white">
+                <div className="mt-2 bg-white pb-4">
                     <span className="flex mb-4 py-4 text-yellow-600 justify-between px-4">
                         <h1>P2P</h1>
                         <Link to={'/p2p'} className="cursor-pointer">see more...</Link>
@@ -43,11 +43,11 @@ const P2P = () => {
 
             </div>
 
-            <div className="gird grid-cols-1 space-y-1">
+            <div className="gird grid-cols-1 space-y-2">
 
-                <div class="bg-white px-4 mt-1 flex">
+                <div class="bg-white px-4 mt-1 flex  cursor-pointer py-2">
 
-                    <div>
+                    <div className="space-y-1">
                         <h1>OLAMOND001</h1>
 
                         <span className="flex space-x-1 text-sm">
@@ -57,7 +57,7 @@ const P2P = () => {
 
                         <span className="flex space-x-4 text-sm">
                             <div className="flex place-items-center space-x-2">
-                                <AiOutlineLike />
+                                <AiOutlineLike className="text-green-800"/> 
                                 <h2>98.8%</h2>
                             </div>
                             <div className="flex place-items-center space-x-2">
@@ -88,8 +88,8 @@ const P2P = () => {
 
 
 
-                <div class="bg-white px-4 flex ">
-                    <div>
+                <div class="bg-white px-4 flex py-2 ">
+                    <div className="space-y-1">
                         <h1>Philip</h1>
 
                         <span className="flex space-x-1 text-sm">
@@ -99,7 +99,7 @@ const P2P = () => {
 
                         <span className="flex space-x-4 text-sm">
                             <div className="flex place-items-center space-x-2">
-                                <AiOutlineLike />
+                                <AiOutlineLike className="text-green-800"/> 
                                 <h2>98.8%</h2>
                             </div>
                             <div className="flex place-items-center space-x-2">
@@ -128,8 +128,8 @@ const P2P = () => {
                 </div>
 
 
-                <div class="bg-white px-4 flex ">
-                    <div>
+                <div class="bg-white px-4 flex cursor-pointer py-2">
+                    <div className="space-y-1">
                         <h1>Philip</h1>
 
                         <span className="flex space-x-1 text-sm">
@@ -139,7 +139,7 @@ const P2P = () => {
 
                         <span className="flex space-x-4 text-sm">
                             <div className="flex place-items-center space-x-2">
-                                <AiOutlineLike />
+                                <AiOutlineLike className="text-green-800"/> 
                                 <h2>98.8%</h2>
                             </div>
                             <div className="flex place-items-center space-x-2">
@@ -168,8 +168,8 @@ const P2P = () => {
                 </div>
 
 
-                <div class="bg-white px-4 flex ">
-                    <div>
+                <div class="bg-white px-4 flex cursor-pointer py-2">
+                    <div className="space-y-1">
                         <h1>Philip</h1>
 
                         <span className="flex space-x-1 text-sm">
@@ -179,7 +179,7 @@ const P2P = () => {
 
                         <span className="flex space-x-4 text-sm">
                             <div className="flex place-items-center space-x-2">
-                                <AiOutlineLike />
+                                <AiOutlineLike className="text-green-800"/> 
                                 <h2>98.8%</h2>
                             </div>
                             <div className="flex place-items-center space-x-2">
@@ -207,8 +207,8 @@ const P2P = () => {
                     </div>
                 </div>
 
-                <div class="bg-white px-4 flex ">
-                    <div>
+                <div class="bg-white px-4 flex cursor-pointer py-2">
+                    <div className="space-y-1">
                         <h1>Philip</h1>
 
                         <span className="flex space-x-1 text-sm">
@@ -218,7 +218,7 @@ const P2P = () => {
 
                         <span className="flex space-x-4 text-sm">
                             <div className="flex place-items-center space-x-2">
-                                <AiOutlineLike />
+                                <AiOutlineLike className="text-green-800"/> 
                                 <h2>98.8%</h2>
                             </div>
                             <div className="flex place-items-center space-x-2">
