@@ -11,8 +11,8 @@ const Layout = ({ children }) => {
     return (
         <div>
             <div className='md:flex md:justify-'>
-                <div className={` md:block ${!showSidebar ? 'hidden' : 'absolute'} `}>
-                    <Sidebar />
+                <div className={` md:block ${!showSidebar ? 'hidden' : 'absolute z-50'} `}>
+                    <Sidebar className=''/>
                 </div>
 
                 <nav className="md:hidden">
