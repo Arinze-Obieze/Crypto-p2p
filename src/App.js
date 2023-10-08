@@ -8,6 +8,7 @@ import Deposit from './pages/Deposit';
 import Convert from './pages/Convert';
 import Referral from './pages/Referral';
 import Market from './pages/market';
+import Withdraw from './pages/Withdraw';
 function App() {
   return (
     <Routes>
@@ -17,8 +18,9 @@ function App() {
       <Route path='/balance' element={<Wallet />} />
       <Route path='/deposit' element={<Deposit />} />
       <Route path='/convert' element={<Convert />} />
-      <Route path='/convert' element={<Referral />} />
-      <Route path='/market' element={<Market/>} />
+      <Route path='/referral' element={<Referral />} />
+      <Route path='/market' element={<Market />} />
+      <Route path='/withdraw' element={<Withdraw />} />
     </Routes>
   );
 }

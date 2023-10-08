@@ -9,20 +9,18 @@ import { AiOutlineWallet } from "react-icons/ai";
 // import { useState } from "react";
 import { Link } from "react-router-dom";
 import Accordion from "../components/Faq";
+import Carousel from "../components/Carousel";
 // import Footer from "../components/footer";
-import Layout from './Layout'
+
 
 const Dashboard = () => {
 
     return (
 
-
-
-
         <div className="bg-gray-100 md:flex-1">
-            {/* <div>
-                    <MessageCard />
-                </div> */}
+            <div>
+                <Carousel />
+            </div>
 
             <div className=" grid grid-cols-2 bg-white md:grid-cols-4  md:px-2">
 
@@ -77,6 +75,7 @@ const Dashboard = () => {
 
 
             <div>
+                <h1 className="text-2xl  text-gray-700 font-serif px-8 pt-8 pb-4">FAQ</h1>
                 <Accordion />
 
             </div>

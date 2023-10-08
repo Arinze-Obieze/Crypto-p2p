@@ -1,6 +1,5 @@
 import { BsBank } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import Layout from './Layout';
 
 const DepositPage = () => {
 
