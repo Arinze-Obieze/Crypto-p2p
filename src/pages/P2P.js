@@ -5,12 +5,13 @@ import { BiTime } from 'react-icons/bi';
 import { FaNairaSign } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { dummyData } from '../data/p2p';
+import Layout from './Layout';
 
 const P2P = () => {
     const displayedData = dummyData.slice(0, 2);
 
     return (
-        <div>
+        <>
             <div>
                 <div className="mt-2 bg-white pb-4">
                     <span className="flex mb-4 py-4 text-yellow-600 justify-between px-4">
@@ -83,7 +84,7 @@ const P2P = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </>
     );
 };
 

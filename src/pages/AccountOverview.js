@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Layout from "./Layout";
 
 const AccountOverview = () => {
     const transactions = [
@@ -15,6 +16,8 @@ const AccountOverview = () => {
     };
 
     return (
+        <Layout>
+
         <div className="flex space-x-2">
 
 
@@ -73,6 +76,7 @@ const AccountOverview = () => {
                 </div>
             </div>
         </div>
+        </Layout>
     );
 };
 

@@ -18,10 +18,10 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <Link to={"#"} className="hover:text-gray-900">Seb</Link>
+                                    <Link to={"#"} className="hover:text-gray-900">How To Trade</Link>
                                 </li>
                                 <li>
-                                    <Link to={"#"} className="hover:text-gray-900">yo</Link>
+                                    <Link to={"#"} className="hover:text-gray-900">About Us</Link>
                                 </li>
                             </ul>
                         </div>

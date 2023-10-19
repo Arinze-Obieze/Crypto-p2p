@@ -3,11 +3,12 @@ import { AiOutlineLike } from 'react-icons/ai';
 import { BiTime } from 'react-icons/bi';
 import { FaNairaSign } from 'react-icons/fa6';
 import { dummyData } from '../data/p2p';
+import Layout from './Layout';
 
 const Market = () => {
 
     return (
-        <div>
+        <Layout>
             <div>
                 <div className="mt-2 bg-white pb-4">
 
@@ -75,7 +76,7 @@ const Market = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </Layout>
     );
 };
 

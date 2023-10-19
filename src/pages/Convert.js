@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Layout from './Layout';
 
 function CryptoConverter() {
     const [convertedAmount, setConvertedAmount] = useState(null);
@@ -24,6 +25,7 @@ function CryptoConverter() {
     };
 
     return (
+        <Layout>
         <div className="bg-gray-100 min-h-screen flex items-center justify-center">
             <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
                 <h1 className="text-2xl font-semibold mb-6">Crypto Converter</h1>
@@ -102,6 +104,7 @@ function CryptoConverter() {
                 )}
             </div>
         </div>
+        </Layout>
     );
 }
 
