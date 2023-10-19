@@ -72,7 +72,6 @@ const Dashboard = () => {
 
                 <P2P />
 
-
                 <div>
                     <h1 className="text-2xl  text-gray-700 font-serif px-8 pt-8 pb-4">FAQ</h1>
                     <Accordion />

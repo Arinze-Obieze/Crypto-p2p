@@ -5,7 +5,7 @@ function Navbar({ toggleSideBar, showSidebar }) {
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <Link href="#" className="flex items-center">
+                <Link href="/" className="flex items-center">
                     <img src="/logo.avif" className="h-8 mr-3" alt="Sebb Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sebb</span>
                 </Link>
