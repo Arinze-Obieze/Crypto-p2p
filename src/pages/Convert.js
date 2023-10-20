@@ -26,8 +26,8 @@ function CryptoConverter() {
 
     return (
         <Layout>
-        <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-            <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
+        <div className="bg-gray-100 dark:bg-gray-900 dark:text-gray-200 min-h-screen flex items-center justify-center">
+            <div className="bg-white dark:bg-gray-700 dark:text-gray-200 rounded-lg shadow-md p-8 w-full max-w-md">
                 <h1 className="text-2xl font-semibold mb-6">Crypto Converter</h1>
 
                 <div className="mb-6">
@@ -36,7 +36,7 @@ function CryptoConverter() {
                     </label>
                     <select
                         id="fromCurrency"
-                        className="w-full border rounded-md px-3 py-2"
+                        className="w-full border dark:text-gray-200 rounded-md px-3 py-2"
                     >
                         <option value="BTC">Bitcoin (BTC)</option>
                         <option value="ETH">Ethereum (ETH)</option>
@@ -46,7 +46,7 @@ function CryptoConverter() {
                 </div>
 
                 <div className="mb-6">
-                    <label className="text-gray-700 block mb-2" htmlFor="amount">
+                    <label className="text-gray-700 dark:text-gray-200 block mb-2" htmlFor="amount">
                         Amount
                     </label>
                     <input
@@ -58,16 +58,16 @@ function CryptoConverter() {
                 </div>
 
                 <div className="mb-6">
-                    <label className="text-gray-700 block mb-2" htmlFor="toCurrency">
+                    <label className="text-gray-700 dark:text-gray-200 block mb-2" htmlFor="toCurrency">
                         Target Currency
                     </label>
                     <select
                         id="toCurrency"
-                        className="w-full border rounded-md px-3 py-2"
+                        className="w-full border dark:text-gray-200 rounded-md px-3 py-2"
                         value={selectedCurrency}
                         onChange={handleCurrencyChange}
                     >
-                        <option value="USD">US Dollar (USD)</option>
+                        <option value="USD" className='dark:text-gray-200'>US Dollar (USD)</option>
                         <option value="EUR">Naira (NGN)</option>
 
                     </select>
@@ -75,7 +75,7 @@ function CryptoConverter() {
 
                 <div className="flex justify-between items-center">
                     <button
-                        className="bg-yellow-600 text-white rounded-md px-4 py-2 hover:bg-blue-600"
+                        className="dark:bg-blue-500 bg-yellow-600 text-white rounded-md px-4 py-2 hover:bg-blue-600"
                         onClick={handleConvert}
                     >
                         {convertToCrypto ? 'Convert' : 'Convert Back'}
@@ -93,7 +93,7 @@ function CryptoConverter() {
 
                 {convertedAmount !== null && (
                     <div className="mt-6">
-                        <p className="text-gray-700">
+                        <p className="text-gray-700 dark:text-gray-200">
                             You will receive{''}
                             <span className="font-semibold">
                                 {convertedAmount.toFixed(2)} {selectedCurrency}

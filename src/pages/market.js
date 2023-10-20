@@ -9,16 +9,16 @@ const Market = () => {
 
     return (
         <Layout>
-            <div>
-                <div className="mt-2 bg-white pb-4">
+            <div className='dark:bg-gray-500'>
+                <div className="pt-4 dark:bg-gray-800 bg-white pb-4">
 
-                    <span className="flex space-x-6 px-4">
+                    <span className="flex space-x-6 dark:text-blue-700 px-4">
                         <h2>Buy</h2>
                         <h2>Sell</h2>
                     </span>
 
                     <div>
-                        <span className="flex justify-evenly mt-4 mb-2">
+                        <span className="flex justify-evenly dark:text-gray-200 mt-4 mb-2">
                             <h3>USDT</h3>
                             <h3>BTC</h3>
                             <h3>FDUSD</h3>
@@ -33,15 +33,15 @@ const Market = () => {
                     <div>
                         <span className="flex space-x-1 px-4 pb-4 place-items-center">
                             <h2>Filter</h2>
-                            <CiFilter className="text-yellow-600" />
+                            <CiFilter className="text-yellow-600 dark:text-blue-500" />
                         </span>
                     </div>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 space-y-2">
-                {dummyData.map((item) => (
-                    <div key={item.id} className="bg-white px-4 mt-1 flex cursor-pointer py-2">
+            <div className="grid grid-cols-1 space-y-2 dark:bg-gray-700">
+                {dummyData.map((item) => ( 
+                    <div key={item.id} className="bg-white dark:bg-gray-800 dark:text-gray-300 px-4 mt-1 flex cursor-pointer py-2">
                         <div className="space-y-1">
                             <h1>{item.username}</h1>
                             <span className="flex space-x-1 text-sm">
@@ -71,7 +71,7 @@ const Market = () => {
                             </span>
                         </div>
                         <div className="ml-auto mt-auto">
-                            <button className="bg-yellow-500 px-4 py-2 text-sm text-white">BUY</button>
+                            <button className="bg-yellow-500 dark:bg-blue-600 px-4 py-2 text-sm text-white">BUY</button>
                         </div>
                     </div>
                 ))}

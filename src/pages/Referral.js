@@ -3,7 +3,7 @@ import Layout from "./Layout";
 const Referral = () => {
     return (
         <Layout>
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+            <div className="bg-white dark:bg-gray-800 dark:text-gray-200 shadow-md p-6 text-center">
                 <h2 className="text-2xl font-semibold mb-4">Referral Program</h2>
                 <p className="mb-4">
                     Invite your friends to join our crypto P2P platform and earn rewards!
@@ -15,7 +15,7 @@ const Referral = () => {
                             f89289239219821892112981289</h2>
                     </div>
 
-                    <button className="bg-yellow-600 text-white rounded-md px-4 text-sm py-1 hover:bg-blue-600">
+                    <button className="bg-yellow-600 dark:bg-blue-500 text-white rounded-md px-4 text-sm py-1 hover:bg-blue-600">
                         copy
                     </button>
                 </div>

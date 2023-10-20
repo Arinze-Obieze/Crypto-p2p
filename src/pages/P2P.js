@@ -12,9 +12,9 @@ const P2P = () => {
 
     return (
         <>
-            <div>
-                <div className="mt-2 bg-white pb-4">
-                    <span className="flex mb-4 py-4 text-yellow-600 justify-between px-4">
+            <div className='dark:text-gray-200 dark:bg-gray-900'>
+                <div className="mt-2  pb-4">
+                    <span className="flex mb-4 py-4 dark:text-blue-600 text-yellow-600 justify-between px-4">
                         <h1>P2P</h1>
                         <Link to="/market" className="cursor-pointer">
                             see more...
@@ -41,15 +41,15 @@ const P2P = () => {
                     <div>
                         <span className="flex space-x-1 px-4 pb-4 place-items-center">
                             <h2>Filter</h2>
-                            <CiFilter className="text-yellow-600" />
+                            <CiFilter className="text-yellow-600 dark:text-blue-600" />
                         </span>
                     </div>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 space-y-2">
+            <div className="grid grid-cols-1 space-y-2 dark:text-gray-200  dark:bg-gray-600">
                 {displayedData.map((item) => (
-                    <div key={item.id} className="bg-white px-4 mt-1 flex cursor-pointer py-2">
+                    <div key={item.id} className="bg-white dark:bg-gray-900 px-4 mt-1 flex cursor-pointer py-2">
                         <div className="space-y-1">
                             <h1>{item.username}</h1>
                             <span className="flex space-x-1 text-sm">
@@ -79,7 +79,7 @@ const P2P = () => {
                             </span>
                         </div>
                         <div className="ml-auto mt-auto">
-                            <button className="bg-yellow-500 px-4 py-2 text-sm text-white">BUY</button>
+                            <button className="bg-yellow-500 dark:bg-blue-600 px-4 py-2 text-sm text-white">BUY</button>
                         </div>
                     </div>
                 ))}

@@ -8,7 +8,7 @@ function Withdraw() {
 
     return (
         <Layout>
-            <div className="bg-gray-100 text-gray-900 min-h-screen flex flex-col justify-center items-center ">
+            <div className="bg-gray-100 dark:bg-gray-800 dark:text-gray-200 text-gray-900 min-h-screen flex flex-col justify-center items-center ">
                 <div className="max-w-md p-6 rounded-lg shadow-lg">
                     <h1 className="text-3xl font-extrabold mb-4">Crypto Withdrawal</h1>
                     <div className="mb-8">
@@ -25,10 +25,10 @@ function Withdraw() {
                     />
                 </div> */}
                         <div className="flex justify-between items-center space-x-4">
-                            <button className="bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-gold-600">
+                            <button className="bg-yellow-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-gold-600">
                                 Withdraw Crypto
                             </button>
-                            <button className="bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-gold-600">
+                            <button className="bg-yellow-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-gold-600">
                                 Withdraw Money
                             </button>
                         </div>

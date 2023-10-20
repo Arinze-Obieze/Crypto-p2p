@@ -14,7 +14,7 @@ const Profile = () => {
                 </div>
                 <div className="text-center">
                     <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">John Doe</h1>
-                    <p className="text-gray-600 dark:text-gray-400 flex justify-center space-x-1 place-items-center mt-1">
+                    <p className="text-gray-600 dark:text-gray-200  flex justify-center space-x-1 place-items-center mt-1">
                         <FaNairaSign /> <h2>600,000,000</h2>
                     </p>
                 </div>
@@ -44,7 +44,7 @@ const Profile = () => {
                     <div className="flex justify-between place-items-center">
                         <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Crypto Wallet</h2>
 
-                        <div className="bg-white flex dark:bg-gray-800 rounded-lg shadow-md p-4 place-items-center space-x-1">
+                        <div className="bg-white flex dark:bg-gray-200 rounded-lg shadow-md p-4 place-items-center space-x-1">
                             <h2> Total :</h2>  <FaNairaSign /> <h2> 60000</h2>
                         </div>
 

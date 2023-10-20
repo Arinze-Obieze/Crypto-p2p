@@ -26,7 +26,7 @@ const Faq = () => {
     ];
 
     return (
-        <div id="accordion-collapse" data-accordion="collapse">
+        <div id="accordion-collapse" data-accordion="collapse" className='dark:bg-gray-800'>
             {accordionItems.map((item, index) => (
                 <div key={index}>
                     <h2 id={`accordion-collapse-heading-${index}`}>
@@ -65,7 +65,7 @@ const Faq = () => {
                             } p-5 border border-b-0 border-gray-200 dark:border-gray-700`}
                         aria-labelledby={`accordion-collapse-heading-${index}`}
                     >
-                        <p className="mb-2 text-gray-500 dark:text-gray-400">{item.content}</p>
+                        <p className="mb-2 text-gray-500 dark:text-gray-200 ">{item.content}</p>
                     </div>
                 </div>
             ))}

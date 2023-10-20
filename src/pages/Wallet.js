@@ -15,19 +15,20 @@ const Wallet = () => {
 
     return (
         <Layout>
-            <div className="container mx-auto mt-4">
+            <div className="container dark:text-gray-200 dark:bg-gray-800 mx-auto pt-4">
                 <h2 className="text-2xl font-semibold mb-4 text-center pb-8">My Wallet</h2>
 
-                <div className="bg-white p-4 rounded shadow-lg">
+                <div className="bg-white dark:bg-gray-800 p-4 rounded shadow-lg">
                     <div>
-                        <div className="mb-4">
-                            <h3 className="text-xl font-semibold">Total Money:</h3>
-                            <p className="text-2xl">{totalMoney} USD</p>
+                        <div className="bg-white place-items-center py-2 justify-evenly flex dark:bg-gray-700 mt-4 p-4 rounded shadow-lg">
+                            <h3 className="text-xl font-semibold mb-2"> Total Balance</h3>
+                            <h2 className="">800,000,000 USDT</h2>
                         </div>
                     </div>
 
-                    <div className='mt-8'>
-                        <h3 className="text-xl font-semibold pb-2">Your Crypto Balance</h3>
+
+                    <div className='mt-8 dark:bg-gray-700 py-4 px-2'>
+                        <h3 className="text-xl font-semibold text-center pb-4">Your Crypto Balance</h3>
                         <ul className="list-disc list-inside">
                             {cryptocurrencies.map((crypto) => (
                                 <li key={crypto.id} className="mb-2">
