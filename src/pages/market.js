@@ -12,7 +12,7 @@ const Market = () => {
             <div className='dark:bg-gray-500'>
                 <div className="pt-4 dark:bg-gray-800 bg-white pb-4">
 
-                    <span className="flex space-x-6 dark:text-blue-700 px-4">
+                    <span className="flex space-x-6 dark:text-green-600 px-4">
                         <h2>Buy</h2>
                         <h2>Sell</h2>
                     </span>
@@ -32,7 +32,7 @@ const Market = () => {
 
                     <div>
                         <span className="flex space-x-1 px-4 pb-4 place-items-center">
-                            <h2>Filter</h2>
+                            <h2 className='text-gray-700 dark:text-gray-300'>Filter</h2>
                             <CiFilter className="text-yellow-600 dark:text-blue-500" />
                         </span>
                     </div>
@@ -40,15 +40,15 @@ const Market = () => {
             </div>
 
             <div className="grid grid-cols-1 space-y-2 dark:bg-gray-700">
-                {dummyData.map((item) => ( 
+                {dummyData.map((item) => (
                     <div key={item.id} className="bg-white dark:bg-gray-800 dark:text-gray-300 px-4 mt-1 flex cursor-pointer py-2">
                         <div className="space-y-1">
-                            <h1>{item.username}</h1>
-                            <span className="flex space-x-1 text-sm">
+                            <h1 >{item.username}</h1>
+                            <span className="flex space-x-1 dark:text-gray-400 text-sm">
                                 <h2>{item.trades} Trades |</h2>
                                 <h2>completion {item.completion}%</h2>
                             </span>
-                            <span className="flex space-x-4 text-sm">
+                            <span className="flex space-x-4 dark:text-gray-400 text-sm">
                                 <div className="flex place-items-center space-x-2">
                                     <AiOutlineLike className="text-green-800" />
                                     <h2>{item.likePercentage}%</h2>
@@ -58,20 +58,20 @@ const Market = () => {
                                     <h2>{item.time}</h2>
                                 </div>
                             </span>
-                            <span className="text-sm">
+                            <span className="text-sm dark:text-gray-300">
                                 <h2>Crypto Amount {item.cryptoAmount}</h2>
                             </span>
                             <span className="flex space-x-4 text-sm">
                                 <h2>Limit</h2>
-                                <span className="flex place-items-center space-x-1 text-sm">
-                                    <FaNairaSign className="text-gray-700" />
+                                <span className="flex place-items-center dark:text-green-600 space-x-1 text-sm">
+                                    <FaNairaSign className="text-gray-700 dark:text-green-600" />
                                     <h2>{item.limit.min}</h2>
                                     <h2>- {item.limit.max}</h2>
                                 </span>
                             </span>
                         </div>
                         <div className="ml-auto mt-auto">
-                            <button className="bg-yellow-500 dark:bg-blue-600 px-4 py-2 text-sm text-white">BUY</button>
+                            <button className=" bg-green-600 rounded-md px-4 py-2 text-sm text-white">BUY</button>
                         </div>
                     </div>
                 ))}

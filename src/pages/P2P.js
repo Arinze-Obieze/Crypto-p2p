@@ -72,7 +72,7 @@ const P2P = () => {
                             <span className="flex space-x-4 text-sm">
                                 <h2>Limit</h2>
                                 <span className="flex place-items-center space-x-1 text-sm">
-                                    <FaNairaSign className="text-gray-700" />
+                                    <FaNairaSign className="text-gray-700 dark:text-green-600" />
                                     <h2>{item.limit.min}</h2>
                                     <h2>- {item.limit.max}</h2>
                                 </span>
