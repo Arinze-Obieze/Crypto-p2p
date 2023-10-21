@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { IoArrowUp, IoPieChart } from "react-icons/io5";
-import Views from "./component/websiteViews";
 import Layout from "./Layout";
 const AdminDashboard = () => {
     const [isEditUserModalOpen, setEditUserModalOpen] = useState(false);

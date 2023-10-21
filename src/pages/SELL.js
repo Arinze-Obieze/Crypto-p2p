@@ -77,7 +77,6 @@ const SELL = () => {
                                 <h2>144.14 USDT</h2>
                             </div>
 
-
                             <div className="flex  flex-col space-y-4 pt-4 justify-between dark:border-gray-500">
                                 <h2>Bank Transfer</h2>
                                 <div className="border-2 dark:border-gray-700  mt-4 ">
