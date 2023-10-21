@@ -79,7 +79,7 @@ const P2P = () => {
                             </span>
                         </div>
                         <div className="ml-auto mt-auto">
-                            <button className="bg-yellow-500 dark:bg-blue-600 px-4 py-2 text-sm text-white">BUY</button>
+                            <button className="bg-green-600 dark:bg-green-600 px-4 py-2 text-sm rounded-md text-white">BUY</button>
                         </div>
                     </div>
                 ))}

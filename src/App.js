@@ -10,6 +10,8 @@ import Referral from './pages/Referral';
 import Market from './pages/market';
 import Withdraw from './pages/Withdraw';
 import AdminDashboard from './Admin/Dashboard';
+import BUY from './pages/BUY';
+import SELL from './pages/SELL';
 function App() {
   return (
     <Routes>
@@ -23,6 +25,8 @@ function App() {
       <Route path='/market' element={<Market />} />
       <Route path='/withdraw' element={<Withdraw />} />
       <Route path='/admin/dashboard' element={<AdminDashboard />} />
+      <Route path='/buy' element={<BUY />} />
+      <Route path='/sell' element={<SELL />} />
     </Routes>
   );
 }
