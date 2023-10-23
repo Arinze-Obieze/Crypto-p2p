@@ -3,7 +3,7 @@ import Layout from "./Layout";
 const Referral = () => {
     return (
         <Layout>
-            <div className="bg-white dark:bg-gray-800 dark:text-gray-200 shadow-md p-6 text-center">
+            <div className="bg-white  h-full  dark:bg-gray-800 dark:text-gray-200 shadow-md p-6 text-center">
                 <h2 className="text-2xl font-semibold mb-4">Referral Program</h2>
                 <p className="mb-4">
                     Invite your friends to join our crypto P2P platform and earn rewards!

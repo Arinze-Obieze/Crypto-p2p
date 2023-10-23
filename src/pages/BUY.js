@@ -16,7 +16,9 @@ const BUY = () => {
                     <div className="flex justify-between px-4">
                         <span>
                             <h1>I want to pay</h1>
-                            <input type="text" placeholder="15,000 - 25,00" />
+                            <input type="text"
+                                className="rounded-md py-2 px-4 outline-none"
+                                placeholder="15,000 - 25,00" />
                         </span>
                         <span className="flex space-x-2">
                             <h2>All</h2>
@@ -29,7 +31,9 @@ const BUY = () => {
                     <div className="flex justify-between px-4">
                         <span>
                             <h1>I will receive</h1>
-                            <input type="text" placeholder="0.00" />
+                            <input type="text"
+                                className="rounded-md py-2 px-4 outline-none"
+                                placeholder="0.00" />
                         </span>
                         <span className="flex space-x-2">
                             <h2>All</h2>
@@ -55,7 +59,7 @@ const BUY = () => {
                                 </div>
                             </div>
 
-                            <Link className="flex space-x-2 ">
+                            <Link to={'/message'} className="flex space-x-2 ">
                                 <BiChat className="text-green-600 text-3xl" />
                                 <h1>Chat with seller</h1>
                             </Link>
@@ -97,10 +101,19 @@ const BUY = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+
+            <div class="bg-blue-100 flex place-items-center px-4 justify-evenly border-t border-b border-blue-500 text-blue-700 py-3" role="alert">
+                <p class="font-bold" >Has Seller refused to release crypto after 30 minutes?</p>
+                <p class="text-sm">
+                    <Link to={'/appeal'} class="bg-blue-500  hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                        Appeal Here
+                    </Link>
+                </p>
+            </div>
+
         </Layout>
     );
 }

@@ -24,13 +24,13 @@ function Withdraw() {
                         placeholder="Enter amount"
                     />
                 </div> */}
-                        <div className="flex justify-between items-center space-x-4">
+                        <div className="flex justify-center items-center space-x-4">
                             <button className="bg-yellow-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-gold-600">
                                 Withdraw Crypto
                             </button>
-                            <button className="bg-yellow-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-gold-600">
-                                Withdraw Money
-                            </button>
+                            {/* <button className="bg-yellow-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-gold-600">
+                               
+                            </button> */}
                         </div>
                     </form>
                 </div>

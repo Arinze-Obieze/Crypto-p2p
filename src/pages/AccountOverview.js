@@ -18,7 +18,7 @@ const AccountOverview = () => {
     return (
         <Layout>
 
-            <div className="flex space-x-2 dark:text-gray-300 dark:bg-gray-800">
+            <div className="flex  h-full  space-x-2 dark:text-gray-300 dark:bg-gray-800">
 
 
                 <div className="container flex flex-col justify-center mx-auto mt-4">

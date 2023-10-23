@@ -11,7 +11,7 @@ const Navbar = ({ setIsSidebar, isSidebar }) => {
                     <h1 className='font-serif text-xl'>Welcome Philip</h1>
                 </div>
 
-                <div className='flex w-1/5 justify-between place-items-center cursor-pointer'>
+                <div className='flex w-1/5 max-[760px]:w-2/4 justify-between place-items-center cursor-pointer'>
                     <span style={{ position: 'relative' }}>
                         <IoNotificationsOutline className=' text-xl' />
                         <h1 className='text-white rounded-full text-sm px-1 bg-red-600' style={{ position: 'absolute', top: '-10px', right: '-10px' }}>12</h1>

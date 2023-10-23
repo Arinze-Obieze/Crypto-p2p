@@ -12,6 +12,8 @@ import Withdraw from './pages/Withdraw';
 import AdminDashboard from './Admin/Dashboard';
 import BUY from './pages/BUY';
 import SELL from './pages/SELL';
+import Appeal from './pages/appeal';
+import Message from './pages/Message';
 function App() {
   return (
     <Routes>
@@ -27,6 +29,8 @@ function App() {
       <Route path='/admin/dashboard' element={<AdminDashboard />} />
       <Route path='/buy' element={<BUY />} />
       <Route path='/sell' element={<SELL />} />
+      <Route path='/appeal' element={<Appeal />} />
+      <Route path='/message' element={<Message />} />
     </Routes>
   );
 }

@@ -7,16 +7,25 @@ const SELL = () => {
         <Layout>
             <div className="dark:bg-gray-900 dark:text-gray-300 pb-24">
 
-                <span className="flex space-x-2 pt-8 pb-4 px-4 text-sm">
-                    <h1>Price</h1>
-                    <h3 className="text-green-600">1,174.48 NGN</h3>
-                </span>
+                <div className="flex justify-between px-4">
+                    <span className="flex space-x-2 pt-8 pb-4  text-sm">
+                        <h1>Price</h1>
+                        <h3 className="text-green-600">1,174.48 NGN</h3>
+                    </span>
 
+                    {/* <div>
+                        <h1 className="dark:bg-red-500 py-3 block px-6 rounded-lg">Appeal</h1>
+                    <h2>Has buyer refused</h2>
+                    </div> */}
+
+                </div>
                 <div className="border-2 mx-4 py-4 font-serif dark:border-gray-700 ">
                     <div className="flex justify-between px-4">
                         <span>
                             <h1>I want to pay</h1>
-                            <input type="text" placeholder="15,000 - 25,00" />
+                            <input type="text"
+                                className="rounded-md py-2 px-4 outline-none"
+                                placeholder="15,000 - 25,00" />
                         </span>
                         <span className="flex space-x-2">
                             <h2>All</h2>
@@ -25,11 +34,14 @@ const SELL = () => {
                     </div>
                 </div>
 
+
                 <div className="border-2 mt-8 mx-4 py-4 font-serif dark:border-gray-700 ">
                     <div className="flex justify-between px-4">
                         <span>
                             <h1>I will receive</h1>
-                            <input type="text" placeholder="0.00" />
+                            <input type="text"
+                                className="rounded-md py-2 px-4 outline-none"
+                                placeholder="0.00" />
                         </span>
                         <span className="flex space-x-2">
                             <h2>All</h2>
@@ -40,7 +52,7 @@ const SELL = () => {
 
 
                 <div className="mx-12 ">
-                    <button className="bg-red-600 mt-8 w-full py-3 text-white font-mono text-xl">BUY USDT</button>
+                    <button className="bg-red-600 mt-8 w-full py-3 text-white font-mono text-xl">SELL USDT</button>
                 </div>
                 <div>
 
@@ -55,7 +67,7 @@ const SELL = () => {
                                 </div>
                             </div>
 
-                            <Link className="flex space-x-2 ">
+                            <Link to={'/message'} className="flex space-x-2 ">
                                 <BiChat className="text-red-600 text-3xl" />
                                 <h1>Chat with buyer</h1>
                             </Link>

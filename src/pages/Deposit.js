@@ -6,7 +6,7 @@ const DepositPage = () => {
 
     return (
 <Layout>
-        <div className='flex justify-center md:m-0 dark:bg-gray-800 pt-12'>
+        <div className='flex  h-full py-4 pb-12 justify-center md:m-0 dark:bg-gray-700 pt-12'>
             <div className="w-full  max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
                 <h5 className="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
                     Deposit through one of these means
@@ -35,7 +35,7 @@ const DepositPage = () => {
                             >
                                 {/* SVG Path for Coinbase Wallet */}
                             </svg>
-                            <span className="flex-1 ml-3 whitespace-nowrap">Copy Wallet Address</span>
+                            <span className="flex-1 ml-3 whitespace-nowrap">Wallet Address</span>
                         </Link>
                     </li>
                     {/* <li>

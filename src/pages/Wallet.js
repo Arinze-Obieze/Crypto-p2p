@@ -15,7 +15,7 @@ const Wallet = () => {
 
     return (
         <Layout>
-            <div className="container dark:text-gray-200 dark:bg-gray-800 mx-auto pt-4">
+            <div className="container  h-full  dark:text-gray-200 dark:bg-gray-800 mx-auto pt-4">
                 <h2 className="text-2xl font-semibold mb-4 text-center pb-8">My Wallet</h2>
 
                 <div className="bg-white dark:bg-gray-800 p-4 rounded shadow-lg">

@@ -46,7 +46,7 @@ const AdminDashboard = () => {
             </div> */}
 
 
-            <div className="grid grid-cols-2 mx-2 md:mx-8 bg-gray-100 text-gray-700">
+            <div className="grid grid-cols-2 mx-2 md:mx-8 dark:bg-gray-800 bg-gray-100 text-gray-700">
 
 
                 <div className="">
@@ -67,9 +67,6 @@ const AdminDashboard = () => {
                             </div>
                         </div>
                     </div>
-
-
-
 
                 </div>
 
@@ -138,7 +135,7 @@ const AdminDashboard = () => {
 
 
 
-            <div>
+            <div className="mt-12"> 
 
                 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <div className="flex items-center justify-between py-4 bg-white dark:bg-gray-800">
